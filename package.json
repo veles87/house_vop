@@ -1,0 +1,38 @@
+{
+  "name": "gosurf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veles87/house_vop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/veles87/house_vop#readme",
+  "bugs": {
+    "url": "https://github.com/veles87/house_vop/issues"
+  },
+  "author": "veles87",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-scss": "^1.1.2",
+    "gulp-uglify-es": "^3.0.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.48.0"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
