@@ -1,0 +1,21 @@
+.map {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #D4C17F;
+        padding-bottom: 100px;
+    }
+
+    &__position {
+        width: 1110px;
+        height: 358px;
+        background: #626262;
+    }
+}

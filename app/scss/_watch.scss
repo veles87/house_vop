@@ -1,0 +1,79 @@
+.watch {
+    background-image: url(../images/bg/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        color: #D4C17F;
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        max-width: 535px;
+        padding-top: 50px;
+        padding-right: 35px;
+    }
+
+    &__form {
+        max-width: 540px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        align-content: center;
+        align-items: center;
+    }
+    &__form-text{
+        min-width: 255px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        /* or 123% */
+
+        text-align: center;
+
+        color: #E7E7E7;
+    }
+
+    &__input {
+        width: 256px;
+        height: 44px;
+        background-color: #ffff;
+        opacity: 0.2;
+        box-sizing: border-box;
+
+        padding: 11px 14px 12px;
+        margin-bottom: 35px;
+        font-size: 16px;
+    }
+
+    &__btn {
+        width: 255px;
+        height: 50px;
+        background: #D4C17F;
+        border: none;
+        color: #ffff;
+    }
+}
+
+.covers{
+    display: flex;
+    justify-content: space-between;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+}
