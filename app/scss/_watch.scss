@@ -64,6 +64,20 @@
         background: #D4C17F;
         border: none;
         color: #ffff;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            font-size: 19px;
+            transition: all 0.2s;
+            background: #f2c72c;
+            width: 300px;
+            height: 75px;
+        }
     }
 }
 
