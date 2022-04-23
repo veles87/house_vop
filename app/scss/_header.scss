@@ -1,3 +1,38 @@
+.header-menu__btn{
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: relative;
+    z-index: 20;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header-menu__btn span{
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: #fff;
+}
+
+.header-menu__btn span::before,
+.header-menu__btn span::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+}
+
+.header-menu__btn span::before{
+    top: -10px;
+}
+
+.header-menu__btn span::after{
+    top: 10px;
+}
 .header {
     background-image: url(../images/bg/bg-1.png);
     background-position: top center;
@@ -105,4 +140,92 @@
 }
 .header-menu__item + .header-menu__item{
     padding-left: 40px;
+}
+
+@media (max-width: 790px){
+
+    .header-menu__item{
+        padding-bottom: 20px;
+    }
+    .header-menu__btn{
+        display: block;
+    }
+    .header-menu__list{
+        display: none;
+    }
+    .header{
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+        }
+    }
+    .header-menu__list{
+        transform: translateY(-150%);
+        transition: all .5s;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        background-color: #242b33;
+        padding-top: 85px;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .header-menu__list.active{
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 55px;
+        padding-bottom: 0;
+    }
+    .header__logo{
+        z-index: 22;
+    }
+}
+@media (max-width: 700px){
+
+    .title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133%;
+        text-align: center;
+        color: #D4C17F;
+        margin-top: 170px;
+        margin-bottom: 280px;
+    }
+    .header{
+        &__title{
+            max-width: 400px;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+        &__adress{
+            margin-bottom: 15px;
+        }
+    }
+
+
+}
+@media (max-width: 400px){
+    .title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 133%;
+        text-align: center;
+        color: #D4C17F;
+        margin-top: 200px;
+        margin-bottom: 300px;
+    }
 }
