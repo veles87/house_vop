@@ -12,17 +12,17 @@ body{
     position: relative;
     background-color: #242B33;
 }
-
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 *,
 *::before,
 *::after{
     box-sizing: inherit;
 }
 
-.container{
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 h1,
 h2,
@@ -57,9 +57,4 @@ a{
 .cover{
 
     padding-top: 180px;
-}
-.container{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
